@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Fabián Escobar ([FabianNorbertoEscobar](https://github.com/FabianNorbertoEscobar))<br>
+* Pablo López ([pabloL0pez](https://github.com/pabloL0pez))<br>
