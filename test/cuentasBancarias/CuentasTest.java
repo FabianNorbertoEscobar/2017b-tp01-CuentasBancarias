@@ -46,4 +46,11 @@ public class CuentasTest {
 		Assert.assertTrue(5000 == cuentaDestino.getSaldo());
 	}
 	
+	@Test(expected = IllegalArgumentException.class)
+	public void queTransfieraMonto() {
+		CuentaBancaria cuentaOrigen = new CuentaBancaria(5000);
+		CuentaBancaria cuentaDestino = new CuentaBancaria(5000);
+		Assert.assertTrue(cuentaOrigen.transferirMontoHacia(-2500, cuentaDestino));
+	}
+	
 }
