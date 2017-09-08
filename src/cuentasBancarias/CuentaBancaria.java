@@ -23,7 +23,7 @@ public class CuentaBancaria {
 		if (monto <= 0) {
 			throw new IllegalArgumentException();
 		}
-		if (this.saldo < monto) {
+		if (!this.saldoSuficiente(monto)) {
 			return false;
 		} else {
 			this.quitarMonto(monto);
@@ -32,6 +32,12 @@ public class CuentaBancaria {
 		}
 	}
 	
+	private boolean saldoSuficiente(double monto) {
+		if (this.saldo < monto) {
+			return false;
+		}
+		return true;
+	}
 
 	private void quitarMonto(double monto) {
 		this.saldo -= monto;
