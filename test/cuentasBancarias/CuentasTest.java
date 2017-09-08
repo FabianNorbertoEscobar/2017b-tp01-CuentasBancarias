@@ -4,10 +4,12 @@ import org.junit.Test;
 
 public class CuentasTest {
 
+	/*
 	@Test
 	public void queConstruya() {
 		CuentaBancaria cuenta = new CuentaBancaria();
 	}
+	*/
 	
 	@Test
 	public void queConstruyaConParametro() {
