@@ -19,6 +19,6 @@ public class CuentasTest {
 	@Test
 	public void queObtieneSaldo() {
 		CuentaBancaria cuenta = new CuentaBancaria(5000);
-		Assert.assertEquals(5000.00, cuenta.getSaldo());
+		Assert.assertTrue(5000 == cuenta.getSaldo());
 	}
 }
