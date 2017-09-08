@@ -19,4 +19,8 @@ public class CuentaBancaria {
 		return this.saldo;
 	}
 
+	public boolean transferirMontoHacia(double monto, CuentaBancaria cuentaDestino) {
+		return true;
+	}
+
 }
