@@ -34,5 +34,6 @@ public class CuentasTest {
 		CuentaBancaria cuentaDestino = new CuentaBancaria(5000);
 		Assert.assertTrue(cuentaOrigen.transferirMontoHacia(2500, cuentaDestino));
 		Assert.assertTrue(2500 == cuentaOrigen.getSaldo());
+		Assert.assertTrue(7500 == cuentaDestino.getSaldo());
 	}
 }
