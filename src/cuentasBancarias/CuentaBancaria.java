@@ -20,6 +20,9 @@ public class CuentaBancaria {
 	}
 
 	public boolean transferirMontoHacia(double monto, CuentaBancaria cuentaDestino) {
+		if (monto < 0) {
+			throw new IllegalArgumentException();
+		}
 		if (this.saldo < monto) {
 			return false;
 		} else {
