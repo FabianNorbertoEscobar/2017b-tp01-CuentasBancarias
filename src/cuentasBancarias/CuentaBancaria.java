@@ -21,7 +21,12 @@ public class CuentaBancaria {
 
 	public boolean transferirMontoHacia(double monto, CuentaBancaria cuentaDestino) {
 		this.saldo -= monto;
+		cuentaDestino.agregarMonto(monto);
 		return true;
+	}
+
+	private void agregarMonto(double monto) {
+		this.saldo += monto;
 	}
 
 }
