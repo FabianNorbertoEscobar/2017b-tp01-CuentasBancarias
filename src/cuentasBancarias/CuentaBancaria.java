@@ -20,9 +20,13 @@ public class CuentaBancaria {
 	}
 
 	public boolean transferirMontoHacia(double monto, CuentaBancaria cuentaDestino) {
-		this.quitarMonto(monto);
-		cuentaDestino.agregarMonto(monto);
-		return true;
+		if (this.saldo < monto) {
+			return false;
+		} else {
+			this.quitarMonto(monto);
+			cuentaDestino.agregarMonto(monto);
+			return true;
+		}
 	}
 	
 
