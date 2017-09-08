@@ -9,6 +9,9 @@ public class CuentaBancaria {
 	}
 
 	public CuentaBancaria(double saldo) {
+		if (saldo < 0) {
+			throw new IllegalArgumentException();
+		}
 		this.saldo = saldo;
 	}
 
