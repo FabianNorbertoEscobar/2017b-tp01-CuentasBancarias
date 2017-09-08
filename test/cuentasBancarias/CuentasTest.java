@@ -27,4 +27,11 @@ public class CuentasTest {
 		CuentaBancaria cuenta = new CuentaBancaria(5000);
 		Assert.assertTrue(5000 == cuenta.getSaldo());
 	}
+	
+	@Test
+	public void queTransfiereMonto() {
+		CuentaBancaria cuentaOrigen = new CuentaBancaria(5000);
+		CuentaBancaria cuentaDestino = new CuentaBancaria(5000);
+		Assert.assertTrue(cuentaOrigen.transferirMontoHacia(2500, cuentaDestino));
+	}
 }
