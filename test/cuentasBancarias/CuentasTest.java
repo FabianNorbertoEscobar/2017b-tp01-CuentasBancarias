@@ -8,4 +8,9 @@ public class CuentasTest {
 	public void queConstruya() {
 		CuentaBancaria cuenta = new CuentaBancaria();
 	}
+	
+	@Test
+	public void queConstruyaConParametro() {
+		CuentaBancaria cuenta = new CuentaBancaria(5000);
+	}
 }
