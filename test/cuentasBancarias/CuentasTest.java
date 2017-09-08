@@ -3,6 +3,7 @@ package cuentasBancarias;
 import org.junit.Assert;
 import org.junit.Test;
 
+@SuppressWarnings("unused")
 public class CuentasTest {
 
 	
@@ -14,6 +15,11 @@ public class CuentasTest {
 	@Test
 	public void queConstruyaConParametro() {
 		CuentaBancaria cuenta = new CuentaBancaria(5000);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void queConstruyaConSaldoNegativo() {
+		CuentaBancaria cuenta = new CuentaBancaria(-5000);
 	}
 	
 	@Test
